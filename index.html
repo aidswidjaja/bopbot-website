@@ -31,64 +31,30 @@
 <body>
   <script src="https://yyf6b93d0g1k.statuspage.io/embed/script.js"></script>
   <main class="container">
-    <h1>BopBot</h1>
-    <p>A fully-featured self-hosted music bot instance for firefly and friends based off <a href="https://github.com/jagrosh/MusicBot">JMusicBot</a></p>
-    <hr>
-    <h4>Adding to your server</h4>
-    <p>BopBot is currently a private bot for friends of Adrian, so if you're interested in adding it, send a DM to aidswidjaja or email bopbot@adrian.id.au - thanks!</p>
-    <h4>Bot status</h4>
-    <p>Please visit <a href="https://status.adrian.id.au">status.adrian.id.au</a></p>
-    <h4>Command list</h4>
-    <p>Use the <code>-help</code> command to figure out what these actually do.</p>
-    <pre>
-  // General commands
-  settings = [ status ]
-  changelog = []
+    <h1>Thank you for playing.</h1>
+    <h2>The end for BopBot</h2>
+    <p>Recently in the past few days there has been a breaking change on YouTube's end restricting certain client types (i.e old Android app versions of which the internal audio sending node spoofs to scrape response) has resulted in tracks not playing on BopBot as per <a href="https://github.com/yt-dlp/yt-dlp/pull/9553">this proposed PR</a> and <a href="https://github.com/lavalink-devs/Lavalink/issues/1030">this upstream issue</a>.</p>
+    <p>With a patch on the way this would normally be a trivial issue to fix. However, <a href="https://github.com/aidswidjaja/aidswidjaja/blob/master/README.md">since the beginning of 2023 I have stopped maintaining any code projects</a> or involving myself with computing at all, and my motivation for making any kind of medium-scale patches or fixes to BopBot has long been gone. Furthermore, like many of the projects I worked on during the HSC, BopBot was very much a temporary solution which has outlived its intended expiry date. It is compiled from a GitHub repository which explicitly supported binaries and warned actively against self-compilation. Random features like bassboost and general behaviour changes have been messily patched in, unit tests and missing dependencies commented out, and it uses dependencies such as <a href="https://github.com/sedmelluq/lavaplayer">lavaplayer</a> which have been long since deprecated and been replaced with very different dependencies such as <a href="https://github.com/lavalink-devs/Lavalink">Lavalink</a>. The proposed fix uses a different dependency maintained by different developers and will likely be targeted for a much newer base. Considering I deleted my developer environment a long time ago, it would take me ages to apply the patch by effectively rebuilding BopBot's underlying code and not only remembering everything I did, but how to do them too (I haven't coded in almost two years).</p>
+    <p>Regardless, BopBot has had great uptime over the past few years I've been passively running it, requiring zero regular maintenance whatsoever. But with less and less people using BopBot as a community music listening tool and more as a personal MP3 player for which vastly superior alternatives exist, breaking changes in YouTube's API, technical debt, the availability of Watch Together and declining motivation, this is the end of the road for BopBot except in the extremely rare event YouTube decides to revert its breaking change.</p>
+    <p>Thank you for playing</p>
+    <p>Adrian</p>   
 
-  // Music commands
-  bassboost = [ bb ]
-  clear = [ stop ]
-  lyrics = [ ly ]
-  nowplaying = [ np, current ]
-  play = [ p ]
-  playlists = [ pls ]
-  queue = [ q, list ]
-  remove = [ rm, delete ]
-  scsearch = [ soundcloud ]
-  search = [ youtube, s ]
-  shuffle = [ sh ]
-  skip = [ voteskip, n ]
+    <h4>First song played on BopBot</h4>
+    <img src="https://media.discordapp.net/attachments/838272886313451524/1224243076965597194/image.png?ex=661cc836&is=660a5336&hm=73095eb675890bc429ca215bcac6a3ac980d8465b443c44d795577acd3111230&=&format=webp&quality=lossless&width=2520&height=406" />
 
-  // Admin commands
-  bbadmin = []
-  prefix = [ setprefix ]
-  setdj = []
-  settc = []
-  setvc = []
-
-  // DJ Commands
-  forceremove = [ fr ]
-  forceskip = [ fs ]
-  move = [ mv, movetrack ]
-  pause = [ ps ]
-  playnext = [ pop ]
-  repeat = [ r, l ]
-  jump = [ skipto ]
-  disconnect = [ dc, die ]
-  volume = [ v, vol ]
-      </pre>
-    <h4>Need help?</h4>
-    <p>DM aidswidjaja or please email bopbot@adrian.id.au</p>
-    <h4>GitHub</h4>
-    Source code and binaries available on aidswidjaja's <a href="https://github.com/aidswidjaja/bopbot">GitHub</a>.
-    <h4>Special thanks</h4>
-    <p>Special thanks to the following dependencies for making BopBot work</p>
+    <h4>Fun facts about BopBot</h4>
     <ul>
-      <li><a href="https://github.com/jagrosh/MusicBot">jagrosh/MusicBot</a></li>
-      <li><a href="https://github.com/sedmelluq/lavaplayer">sedmelluq/lavaplayer</a></li>
-      <li><a href="https://github.com/DV8FromTheWorld/JDA">DV8FromTheWorld/JDA</a></li>
+      <li>BopBot has been online for 927 days - starting on 17 September 2021 in response to the great Discord mass music bot purge</li>
+      <li>BopBot has streamed hundreds of hours of music across 7 guilds, 50 voice channels and hundreds of users.</li>
+      <li>Our favourite commands was <tt>-initiate_pain</tt> and <tt>-potato</tt></li>
     </ul>
-    <p>absolutely no thanks to JFrog Bintray who's shutdown made binary hunting the literal bane of this entire project</p>
+    <h4>Credits</h4>
+    <ul>
+      <li><a href="https://github.com/jagrosh/MusicBot">jagrosh/MusicBot</a> - if you're interested in hosting your own Discord music bot, this is the original codebase from which BopBot is based upon</li>
+      <li><a href="https://github.com/sedmelluq/lavaplayer">sedmelluq/lavaplayer</a> - this has now been depreceated and replaced with <a href="https://github.com/lavalink-devs/Lavalink"></li>
+      <li><a href="https://github.com/DV8FromTheWorld/JDA">DV8FromTheWorld/JDA</a></li>
+      <li>everyone who played their beats on bopbot \<3</li>
+    </ul>
   </main>
 </body>
 
